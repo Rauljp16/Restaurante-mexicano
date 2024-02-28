@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <div className="static flex items-center justify-center border-b-2 border-purple-300 bg-purple-200 h-20  ">
+    <div className=" absolute z-10 flex items-center justify-center text-white h-20 backdrop-blur-sm bg-white/30 ">
       <p className="relative text-5xl flex uppercase ">fake katrina</p>
     </div>
   );

@@ -10,13 +10,11 @@ function App() {
   return (
     <>
       <Header />
-      <Body>
-        <Routes>
-          <Route path="/" Component={Body} />
-          <Route path="/Carta" Component={Menu} />
-          <Route path="/contacto" Component={Contact} />
-        </Routes>
-      </Body>
+      <Routes>
+        <Route path="/" element={<Body />} />
+        <Route path="/Carta" element={<Menu />} />
+        <Route path="/contacto" element={<Contact />} />
+      </Routes>
 
       <Navbar />
     </>
