@@ -1,7 +1,5 @@
 function Body() {
-  return (
-    <div className="static border-2 w-full size-10 bg-slate-200">Body</div>
-  );
+  return <div className=" w-full bg-orange-300/30 ">Body</div>;
 }
 
 export default Body;
