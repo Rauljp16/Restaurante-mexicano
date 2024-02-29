@@ -1,5 +1,5 @@
 import './App.css';
-import Header from './Header';
+import Header from './components/Header';
 import Body from './components/Body';
 import Navbar from './components/Navbar';
 import { Route, Routes } from 'react-router-dom';

@@ -4,6 +4,6 @@
 
 @layer base {
   body {
-    @apply relative max-w-5xl mx-auto w-full h-screen p-4;
+    @apply relative border-8 border-red-700 max-w-5xl mx-auto w-full h-screen p-4;
   }
 }
