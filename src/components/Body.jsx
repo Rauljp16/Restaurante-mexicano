@@ -1,5 +1,5 @@
 function Body() {
-  return <div className=" w-full bg-orange-300/30 ">Body</div>;
+  return <div className="flex flex-1 w-full ">Body</div>;
 }
 
 export default Body;
