@@ -1,7 +1,11 @@
 function Header() {
   return (
-    <div className=" flex items-center justify-start pl-8 text-white h-20  ">
-      <p className=" text-5xl flex uppercase ">mexico</p>
+    <div>
+      <div className="absolute left-0">
+        <div className=" fixed flex w-full items-center justify-center text-white h-20  ">
+          <p className=" text-5xl flex uppercase ">Restaurante mexico</p>
+        </div>
+      </div>
     </div>
   );
 }

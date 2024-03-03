@@ -2,11 +2,11 @@ import maps from '../img/maps.png';
 
 function Contact() {
   return (
-    <div className="flex items-center justify-around flex-1 w-full">
-      <div className=" p-2 w-1/2 h-1/2 ">
-        <img className="w-full h-full rounded-md" src={maps} />
+    <div className=" h-screen  flex items-center w-full">
+      <div className="w-1/2 p-2 ">
+        <img className=" h-96 rounded-md" src={maps} />
       </div>
-      <div className=" flex flex-col items-center justify-around p-2 bg-zinc-800/95 w-1/2 h-96 rounded-md text-white text-2xl">
+      <div className=" flex flex-col items-center justify-around p-2  w-1/2 h-96 rounded-md text-white text-2xl backdrop-blur-sm bg-white/30">
         <p>Mexico</p>
         <p>Direccion</p>
         <p>Correo electronico</p>

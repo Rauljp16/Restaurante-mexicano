@@ -8,7 +8,7 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
       <Header />
       <Routes>
         <Route path="/" element={<Body />} />
@@ -17,7 +17,7 @@ function App() {
       </Routes>
 
       <Navbar />
-    </div>
+    </>
   );
 }
 
