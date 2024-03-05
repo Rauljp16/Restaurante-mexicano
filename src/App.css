@@ -1,7 +1,5 @@
 body {
-  /* background-image: url('./img/fondo1.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
-  background: linear-gradient(to right, #ce85ce 50%, #b9844e, #679fb8);
+  background-image: url('./img/fondoW.jpeg');
+  background-size: 100vw;
+  width: 100vw;
 }
