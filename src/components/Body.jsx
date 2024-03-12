@@ -9,7 +9,7 @@ function Body() {
       <img src={comida1} />
       <img src={comida2} />
       <img src={comida3} />
-      <div className="   flex p-4 backdrop-blur-sm bg-white/30 rounded-md text-white text-3xl  items-center leading-relaxed">
+      <div className="   flex p-4 backdrop-blur-sm bg-fuchsia-500/60 text-white text-3xl  items-center leading-relaxed">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque deleniti
         officia consequuntur blanditiis ea. Repellat, quasi rem eos atque sunt
         animi laboriosam suscipit natus voluptate praesentium? Quidem quisquam
