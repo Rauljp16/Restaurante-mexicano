@@ -5,10 +5,10 @@ function Contact() {
   const mapCenter = { lat: 37.97, lng: -1.22 };
   const mapZoom = 14;
   return (
-    <div className=" h-screen  flex items-center justify-center w-full gap-4">
+    <div className=" flex h-screen w-full items-center justify-center gap-4">
       <Location apiKey={apiKey} center={mapCenter} zoom={mapZoom} />
       {/* <div className="w-1/2 p-2 "></div> */}
-      <div className=" flex flex-col items-center justify-around p-2  w-1/2 h-96 rounded-md text-white text-2xl backdrop-blur-sm bg-white/30">
+      <div className=" flex h-96 w-1/2 flex-col items-center  justify-around rounded-md bg-white/30 p-2 text-2xl text-white backdrop-blur-sm">
         <p>Mexico</p>
         <p>Direccion</p>
         <p>Correo electronico</p>

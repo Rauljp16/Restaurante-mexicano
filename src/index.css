@@ -4,6 +4,6 @@
 
 @layer base {
   body {
-    @apply min-h-screen max-w-5xl mx-auto w-full px-4;
+    @apply mx-auto min-h-screen w-full max-w-7xl px-4;
   }
 }
