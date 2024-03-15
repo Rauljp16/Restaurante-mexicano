@@ -9,14 +9,13 @@ import Contact from './components/Contact';
 function App() {
   return (
     <>
+      <Navbar />
       {/* <Header /> */}
       <Routes>
         <Route path="/" element={<Body />} />
         <Route path="/Carta" element={<Menu />} />
         <Route path="/contacto" element={<Contact />} />
       </Routes>
-
-      <Navbar />
     </>
   );
 }

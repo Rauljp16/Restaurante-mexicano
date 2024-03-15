@@ -15,11 +15,11 @@ function Body() {
         <img src={decoration2} className="absolute  left-0 top-0 w-2/6 " />
         <img
           src={tacoHome}
-          className="absolute left-1/2 top-1/2 w-2/5 -translate-x-1/2 -translate-y-1/3 transform"
+          className=" absolute left-1/3 top-80 w-96"
           style={{ filter: 'drop-shadow(40px 70px 30px RGBa(31, 8, 26, 0.8))' }}
         />
         <p
-          className=" font-brush-script absolute left-1/2 top-1/4 -translate-x-1/2 -translate-y-1/2 transform text-center  text-9xl font-bold uppercase text-fuchsia-600"
+          className=" absolute left-1/2 top-1/4 -translate-x-1/2 -translate-y-1/2 transform text-center font-brush-script  text-9xl font-bold uppercase text-fuchsia-600"
           style={{ filter: 'drop-shadow(4px 4px 4px RGBA(31, 8, 26, 1))' }}
         >
           Taqueria Taqueando
@@ -29,7 +29,7 @@ function Body() {
 
       <section className="relative flex h-screen w-full flex-col items-center  bg-zinc-900">
         <p
-          className="font-brush-script relative top-32 w-2/4 text-center text-8xl font-bold text-orange-400"
+          className="relative top-32 w-2/4 text-center font-brush-script text-8xl font-bold text-orange-400"
           style={{ filter: 'drop-shadow(2px 2px 2px RGBA(192,38,211, 0.5)' }}
         >
           Drisfruta de los platos estrella
@@ -65,19 +65,19 @@ function Body() {
         </div>
         <div className="flex w-1/2 flex-col items-center gap-6 pt-20">
           <p className=" font-brush-script text-7xl font-bold text-black">
-            El legado de PAULA!
+            El legado de Pancho!
           </p>
           <p className="text-2xl font-bold">
             Un apasionado emprendedor culinario.{' '}
           </p>
-          <p className=" whitespace-pre-line p-4 text-justify text-lg leading-loose text-white">
+          <p className=" p-4 text-justify text-lg leading-loose text-white">
             En el vibrante barrio de La Colonia, nació Pancho en una soleada
             mañana de mayo, envuelto en el aroma de las especias y la música
-            callejera.
+            callejera. <br />
             <br />
             Desde pequeño, su abuela le enseñó los secretos ancestrales de la
             cocina mexicana, cultivando en él un amor profundo por los sabores
-            auténticos y las tradiciones culinarias.
+            auténticos y las tradiciones culinarias. <br />
             <br />
             Con el coraje de un aventurero y el corazón de un apasionado, Pancho
             fundó la Taquería Taqueando en un viejo edificio restaurado en el
