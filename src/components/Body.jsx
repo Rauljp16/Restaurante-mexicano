@@ -5,46 +5,47 @@ import comida3 from '../img/comida3.jpg';
 import tacoHome from '../img/tacoHome.png';
 import decoration1 from '../img/decoration1.png';
 import decoration2 from '../img/decoration2.png';
+import decoration3 from '../img/decoration3.png';
 import fundador from '../img/fundador.jpg';
 import CardTop from './CardTop';
 
 function Body() {
   return (
-    <div className=" flex w-full flex-col">
-      <section className=" relative flex h-screen w-full bg-orange-400">
-        <img src={decoration2} className="absolute  left-0 top-0 w-2/6 " />
-        <img
-          src={tacoHome}
-          className=" absolute left-1/3 top-80 w-96"
-          style={{ filter: 'drop-shadow(40px 70px 30px RGBa(31, 8, 26, 0.8))' }}
-        />
+    <div className="relative flex w-full flex-col">
+      <section className="relative flex h-screen w-full flex-col items-center gap-20 bg-orange-400">
+        <img src={decoration2} className="absolute left-0 top-0 w-2/3 " />
         <p
-          className=" absolute left-1/2 top-1/4 -translate-x-1/2 -translate-y-1/2 transform text-center font-brush-script  text-9xl font-bold uppercase text-fuchsia-600"
-          style={{ filter: 'drop-shadow(4px 4px 4px RGBA(31, 8, 26, 1))' }}
+          className="pt-20 text-center font-brush-script text-6xl font-bold uppercase text-fuchsia-600"
+          style={{ filter: 'drop-shadow(3px 4px 2px RGBA(31, 8, 26, 1))' }}
         >
           Taqueria Taqueando
         </p>
-        <img src={decoration1} className="absolute bottom-0 right-0 w-2/6" />
+        <img
+          src={tacoHome}
+          className=" w-5/6 "
+          style={{ filter: 'drop-shadow(20px 40px 16px RGBa(31, 8, 26, 0.8))' }}
+        />
+        <img src={decoration1} className=" absolute bottom-0 right-0 w-2/3 " />
       </section>
 
-      <section className="relative flex h-screen w-full flex-col items-center  bg-zinc-900">
+      <section className=" bg-zinc-900">
         <p
-          className="relative top-32 w-2/4 text-center font-brush-script text-8xl font-bold text-orange-400"
+          className=" font-brush-script font-bold text-orange-400"
           style={{ filter: 'drop-shadow(2px 2px 2px RGBA(192,38,211, 0.5)' }}
         >
           Drisfruta de los platos estrella
         </p>
-        <p className="relative top-40 w-2/4 text-center text-white">
+        <p className=" text-white">
           Te presentamos nuestros platos más vendidos.
           <br /> Una explosión de sabores en cada bocado.
         </p>
-        <div className=" absolute bottom-28 z-10 flex h-96 w-full items-center justify-around px-6 text-lg text-white">
+        <div className="  flex  text-white">
           <CardTop
             imagen={taco}
             precio="2.5 €"
             descripcion="Taco sl estilo guacamole"
           />
-          <CardTop imagen={comida1} precio="4 €" descripcion="Taco guacamole" />
+          {/* <CardTop imagen={comida1} precio="4 €" descripcion="Taco guacamole" />
           <CardTop
             imagen={comida2}
             precio="5 €"
@@ -53,24 +54,21 @@ function Body() {
           <CardTop
             imagen={comida3}
             precio="4.5 €"
-            descripcion="Ensalada de chinga"
-          />
+            descripcion="Ensalada de chinga"/>*/}
         </div>
-        <img src={decoration1} className="absolute bottom-0 right-0 w-2/6" />
+        <img src={decoration1} className="" />
       </section>
 
-      <section className="relative  flex h-screen w-full gap-10 bg-orange-400 px-10 pb-40">
-        <div className=" z-10 flex w-1/2 items-center rounded-b-md bg-zinc-900 p-4">
-          <img src={fundador} className=" w-full " />
+      <section className="relative bg-orange-400 ">
+        <div className="  rounded-b-md bg-zinc-900 p-4">
+          <img src={fundador} className=" " />
         </div>
-        <div className="flex w-1/2 flex-col items-center gap-6 pt-20">
-          <p className=" font-brush-script text-7xl font-bold text-black">
+        <div className="">
+          <p className=" font-brush-script  font-bold text-black">
             El legado de Pancho!
           </p>
-          <p className="text-2xl font-bold">
-            Un apasionado emprendedor culinario.{' '}
-          </p>
-          <p className=" p-4 text-justify text-lg leading-loose text-white">
+          <p className=" font-bold">Un apasionado emprendedor culinario. </p>
+          <p className="  text-white">
             En el vibrante barrio de La Colonia, nació Pancho en una soleada
             mañana de mayo, envuelto en el aroma de las especias y la música
             callejera. <br />
@@ -88,60 +86,8 @@ function Body() {
             autenticidad y sabor.
           </p>
         </div>
-        <img
-          src={decoration1}
-          className=" absolute -bottom-20 left-20  w-2/5 rotate-90"
-        />
+        <img src={decoration3} className="absolute bottom-0 w-2/3" />
       </section>
-
-      {/*
-      //
-      //
-      //
-      //
-      //
-      */}
-
-      <section className=" flex h-96 w-full bg-zinc-900">
-        <div className="mx-14 flex w-1/2 items-center text-white">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-            blanditiis ducimus voluptatum animi est itaque commodi esse impedit
-            provident cum, quibusdam quis voluptates non, consectetur et dolores
-            dicta mollitia dolorum?
-          </p>
-        </div>
-        <img src={comida2} className="w-1/2" />
-      </section>
-      <section className=" flex h-96 w-full bg-orange-400">
-        <img src={comida1} className="w-1/2" />
-        <div className="mx-14 flex w-1/2 items-center text-white">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-            blanditiis ducimus voluptatum animi est itaque commodi esse impedit
-            provident cum, quibusdam quis voluptates non, consectetur et dolores
-            dicta mollitia dolorum?
-          </p>
-        </div>
-      </section>
-      <section className=" flex h-96 w-full bg-zinc-900">
-        <div className="mx-14 flex w-1/2 items-center text-white">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-            blanditiis ducimus voluptatum animi est itaque commodi esse impedit
-            provident cum, quibusdam quis voluptates non, consectetur et dolores
-            dicta mollitia dolorum?
-          </p>
-        </div>
-        <img src={comida3} className="w-1/2" />
-      </section>
-      <div className="   flex items-center bg-orange-400 p-4 text-3xl leading-relaxed  text-white backdrop-blur-sm">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque deleniti
-        officia consequuntur blanditiis ea. Repellat, quasi rem eos atque sunt
-        animi laboriosam suscipit natus voluptate praesentium? Quidem quisquam
-        eligendi nostrum.
-      </div>
-      <img src={taco} />
     </div>
   );
 }
