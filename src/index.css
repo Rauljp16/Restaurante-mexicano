@@ -15,7 +15,6 @@
     transform: translateY(0);
   }
 }
-
 @keyframes slide-up {
   0% {
     transform: translateY(0);
@@ -24,11 +23,9 @@
     transform: translateY(-100%);
   }
 }
-
 .animate-slide-down {
-  animation: slide-down 0.5s ease-out;
+  animation: slide-down 0.7s ease-out;
 }
-
 .animate-slide-up {
-  animation: slide-up 0.5s ease-out;
+  animation: slide-up 0.7s ease-out;
 }
