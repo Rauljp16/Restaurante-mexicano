@@ -1,7 +1,7 @@
 import taco from '../img/taco.jpg';
-import comida1 from '../img/comida1.jpg';
-import comida2 from '../img/comida2.jpg';
-import comida3 from '../img/comida3.jpg';
+// import comida1 from '../img/comida1.jpg';
+// import comida2 from '../img/comida2.jpg';
+// import comida3 from '../img/comida3.jpg';
 import tacoHome from '../img/tacoHome.png';
 import decoration1 from '../img/decoration1.png';
 import decoration2 from '../img/decoration2.png';
@@ -28,9 +28,9 @@ function Body() {
         <img src={decoration1} className=" absolute bottom-0 right-0 w-2/3 " />
       </section>
 
-      <section className=" bg-zinc-900">
+      <section className="relative flex h-screen w-full flex-col items-center justify-evenly bg-zinc-900">
         <p
-          className=" font-brush-script font-bold text-orange-400"
+          className=" font-brush-script text-3xl font-bold text-orange-400"
           style={{ filter: 'drop-shadow(2px 2px 2px RGBA(192,38,211, 0.5)' }}
         >
           Drisfruta de los platos estrella
@@ -56,7 +56,7 @@ function Body() {
             precio="4.5 €"
             descripcion="Ensalada de chinga"/>*/}
         </div>
-        <img src={decoration1} className="" />
+        <img src={decoration1} className="absolute bottom-0 right-0 w-2/3" />
       </section>
 
       <section className="relative bg-orange-400 ">
