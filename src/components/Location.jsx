@@ -28,12 +28,7 @@ const Location = ({ center, zoom }) => {
     });
   };
 
-  return (
-    <div
-      ref={mapContainerRef}
-      style={{ width: '400px', height: '380px', borderRadius: '8px' }}
-    />
-  );
+  return <div ref={mapContainerRef} className="h-full w-full" />;
 };
 
 export default Location;
