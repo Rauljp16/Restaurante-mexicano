@@ -23,8 +23,8 @@ const BurguerMenu = () => {
       <div
         className={`${
           isOpen
-            ? ' opacity-1 fixed left-0 top-0 z-30 flex w-full -translate-x-0 flex-col items-center gap-8 rounded-b-xl bg-orange-400 p-8 text-xl shadow-xl transition duration-700 sm:flex'
-            : 'disabled: pointer-events-none fixed left-0 top-0 flex w-full translate-x-44 flex-col items-center gap-8 rounded-b-xl bg-orange-400 p-8 text-xl opacity-0 shadow-xl transition duration-700 sm:flex'
+            ? ' opacity-1 fixed left-0 top-0 z-30 flex w-full  -translate-x-0 flex-col items-center gap-10 rounded-b-xl bg-orange-400 py-16 text-xl shadow-xl transition duration-700 sm:flex'
+            : 'disabled: pointer-events-none fixed left-0 top-0 flex w-full translate-x-44 flex-col items-center gap-10 rounded-b-xl bg-orange-400 py-16 text-xl opacity-0 shadow-xl transition duration-700 sm:flex'
         }`}
       >
         <Link
