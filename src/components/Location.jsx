@@ -28,7 +28,7 @@ const Location = ({ center, zoom }) => {
     });
   };
 
-  return <div ref={mapContainerRef} className="h-full w-full rounded-xl" />;
+  return <div ref={mapContainerRef} className="h-full w-full rounded-md" />;
 };
 
 export default Location;

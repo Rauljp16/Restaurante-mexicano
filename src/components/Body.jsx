@@ -12,18 +12,18 @@ import CardTop from './CardTop';
 function Body() {
   return (
     <div className="relative flex w-full flex-col">
-      <section className="relative flex h-screen w-full flex-col items-center gap-20 bg-orange-400">
+      <section className="relative flex h-screen w-full flex-col items-center justify-center gap-20 bg-orange-400">
         <img src={decoration2} className="absolute left-0 top-0 w-3/5 " />
         <img src={decoration1} className=" absolute bottom-4 right-0 w-4/5 " />
         <p
-          className="pt-20 text-center font-brush-script text-7xl font-bold uppercase text-white"
+          className=" text-center font-brush-script text-7xl font-bold uppercase text-white"
           style={{ filter: 'drop-shadow(3px 4px 2px RGBA(31, 8, 26, 1))' }}
         >
           Taqueria Taqueando
         </p>
         <img
           src={tacoHome}
-          className=" w-5/6 "
+          className=" w-4/6 "
           style={{ filter: 'drop-shadow(20px 40px 16px RGBa(31, 8, 26, 0.8))' }}
         />
       </section>
@@ -38,13 +38,13 @@ function Body() {
         <p className=" mx-10 font-brush-script text-xl text-white">
           ¡Te presentamos nuestros platos más vendidos!
           <br /> Cada bocado es una experiencia única, una explosión de sabores
-          especialmente diseñada para ti.
+          especialmente diseñada para ti
         </p>
         <div className=" z-10 flex w-5/6 text-white shadow-lg shadow-orange-900">
           <CardTop
             imagen={taco}
             precio="2.5 €"
-            descripcion="Taco sl estilo guacamole"
+            descripcion="Taco al estilo guacamole"
           />
           {/* <CardTop imagen={comida1} precio="4 €" descripcion="Taco guacamole" />
           <CardTop
@@ -115,7 +115,7 @@ function Body() {
             <p className=" text-white"> Restaurante Mexicano</p>
           </div>
         </div>
-        <p className="ml-4 text-orange-400">Siguenos:</p>
+        <p className="ml-4 text-sm text-orange-400">Siguenos:</p>
         <div className="flex h-16 w-full justify-center gap-4 ">
           <div className="flex h-10 w-10 items-center justify-center  rounded-full bg-white ">
             <svg
