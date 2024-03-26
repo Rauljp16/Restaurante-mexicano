@@ -6,12 +6,12 @@ function Contact() {
   const mapCenter = { lat: 37.97, lng: -1.22 };
   const mapZoom = 14;
   return (
-    <div className="relative flex h-screen  flex-col items-center">
-      <img src={decoration4} className="absolute bottom-0 h-72 w-full " />
+    <div className="relative flex h-screen  flex-col items-center ">
+      <img src={decoration4} className="absolute bottom-0 h-40 w-44 " />
       <section className=" mt-24 h-56 w-full px-4">
         <Location apiKey={apiKey} center={mapCenter} zoom={mapZoom} />
       </section>
-      <section className="relative mt-12 h-2/4 overflow-auto px-4">
+      <section className="relative mt-12 h-2/4  px-4">
         <div className=" flex h-full flex-col items-start text-2xl text-black ">
           <h1
             className=" mb-2 font-brush-script text-4xl font-bold uppercase text-white"
@@ -32,11 +32,7 @@ function Contact() {
           <p className="text-base">Lunes a Domingo: 13:00 p.m. - 11:30 p.m.</p>
         </div>
       </section>
-      <footer className=" relative mt-4 flex w-full flex-col justify-center gap-2 bg-zinc-900">
-        <img
-          src={decoration4}
-          className=" absolute h-full w-full opacity-30 "
-        />
+      <footer className=" mt-4 flex w-full flex-col justify-center gap-2 bg-zinc-900">
         <div className="mx-4 mt-3 flex gap-4 font-brush-script">
           <div className=" ">
             <svg
@@ -58,7 +54,7 @@ function Contact() {
           </div>
         </div>
         <p className="ml-4 text-sm text-orange-400">Siguenos:</p>
-        <div className="m-3 flex w-full justify-center gap-4 ">
+        <div className="flex w-full justify-center gap-4 py-3 ">
           <div className="flex h-10 w-10 items-center justify-center  rounded-full bg-white ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
