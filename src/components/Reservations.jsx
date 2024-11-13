@@ -89,7 +89,7 @@ function Reservations() {
                     }
                     className="flex h-10 w-10 items-center justify-center rounded-full border border-orange-200 text-2xl text-white"
                   >
-                    <span className="pb-2 text-3xl">-</span>
+                    <span className="text-3xl">-</span>
                   </button>
                   <span className="w-12 text-center text-2xl font-bold text-orange-600">
                     {formData.guests}
@@ -104,7 +104,7 @@ function Reservations() {
                     }
                     className="flex h-10 w-10 items-center justify-center rounded-full border border-orange-200 text-white"
                   >
-                    <span className="pb-2 text-3xl">+</span>
+                    <span className="text-3xl">+</span>
                   </button>
                 </div>
               </div>
