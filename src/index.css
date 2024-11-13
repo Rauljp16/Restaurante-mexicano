@@ -4,6 +4,6 @@
 
 @layer base {
   body {
-    @apply mx-auto min-h-screen w-full max-w-7xl;
+    @apply font-poppins mx-auto min-h-screen w-full max-w-7xl;
   }
 }

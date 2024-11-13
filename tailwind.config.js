@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         'brush-script': ['Nanum Brush Script', 'cursive'],
+        poppins: ['Poppins', 'sans-serif'],
       },
     },
   },
