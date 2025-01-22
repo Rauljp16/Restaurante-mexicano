@@ -36,10 +36,10 @@ function Reservations() {
   };
 
   return (
-    <section className="relative flex flex-col justify-between overflow-hidden bg-[#FF8C42] px-10 pt-32">
-      <div className="relative mx-auto max-w-4xl">
-        <div className="overflow-hidden rounded-2xl bg-zinc-900/90 p-6 shadow-2xl md:p-8">
-          <h2 className="mb-6 text-3xl font-bold text-orange-600">
+    <section className="relative flex min-h-[calc(100vh-124px)] flex-col justify-center bg-[#FF8C42] px-4 pb-8 pt-24">
+      <div className="mx-auto w-full max-w-4xl scale-90">
+        <div className="rounded-xl bg-zinc-900/90 p-6 shadow-2xl ">
+          <h2 className="mb-6 text-center text-2xl font-bold text-orange-600 md:text-3xl">
             Reserva tu mesa en Taqueria Taqueando 🌮
           </h2>
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -52,7 +52,7 @@ function Reservations() {
                   type="date"
                   value={formData.date}
                   onChange={(e) => updateFormData('date', e.target.value)}
-                  className="w-full rounded-lg border border-orange-200 p-3"
+                  className="w-full rounded-lg border border-orange-200 p-2 text-sm"
                   required
                 />
               </div>
@@ -63,7 +63,7 @@ function Reservations() {
                 <select
                   value={formData.time}
                   onChange={(e) => updateFormData('time', e.target.value)}
-                  className="w-full rounded-lg border border-orange-200 p-3"
+                  className="w-full rounded-lg border border-orange-200 p-2 text-sm"
                   required
                 >
                   <option value="">Selecciona la hora</option>
@@ -87,11 +87,11 @@ function Reservations() {
                     onClick={() =>
                       updateFormData('guests', Math.max(1, formData.guests - 1))
                     }
-                    className="flex h-10 w-10 items-center justify-center rounded-full border border-orange-200 text-2xl text-white"
+                    className="flex h-8 w-8 items-center justify-center rounded-full border border-orange-200 text-xl text-white"
                   >
-                    <span className="text-3xl">-</span>
+                    -
                   </button>
-                  <span className="w-12 text-center text-2xl font-bold text-orange-600">
+                  <span className="w-12 text-center text-xl font-bold text-orange-600">
                     {formData.guests}
                   </span>
                   <button
@@ -102,9 +102,9 @@ function Reservations() {
                         Math.min(10, formData.guests + 1)
                       )
                     }
-                    className="flex h-10 w-10 items-center justify-center rounded-full border border-orange-200 text-white"
+                    className="flex h-8 w-8 items-center justify-center rounded-full border border-orange-200 text-xl text-white"
                   >
-                    <span className="text-3xl">+</span>
+                    +
                   </button>
                 </div>
               </div>
@@ -115,7 +115,7 @@ function Reservations() {
                 <select
                   value={formData.occasion}
                   onChange={(e) => updateFormData('occasion', e.target.value)}
-                  className="w-full rounded-lg border border-orange-200 p-3"
+                  className="w-full rounded-lg border border-orange-200 p-2 text-sm"
                 >
                   {occasions.map((occasion) => (
                     <option key={occasion} value={occasion}>
@@ -135,7 +135,7 @@ function Reservations() {
                   type="text"
                   value={formData.name}
                   onChange={(e) => updateFormData('name', e.target.value)}
-                  className="w-full rounded-lg border border-orange-200 p-3"
+                  className="w-full rounded-lg border border-orange-200 p-2 text-sm"
                   required
                 />
               </div>
@@ -147,7 +147,7 @@ function Reservations() {
                   type="email"
                   value={formData.email}
                   onChange={(e) => updateFormData('email', e.target.value)}
-                  className="w-full rounded-lg border border-orange-200 p-3"
+                  className="w-full rounded-lg border border-orange-200 p-2 text-sm"
                   required
                 />
               </div>
@@ -161,41 +161,18 @@ function Reservations() {
                 type="tel"
                 value={formData.phone}
                 onChange={(e) => updateFormData('phone', e.target.value)}
-                className="w-full rounded-lg border border-orange-200 p-3"
+                className="w-full rounded-lg border border-orange-200 p-2 text-sm"
                 required
               />
             </div>
 
             <button
               type="submit"
-              className="w-full rounded-lg bg-orange-500 px-4 py-3 font-bold text-white transition duration-300 hover:bg-orange-600"
+              className="w-full rounded-lg bg-orange-500 px-4 py-2 text-sm font-bold text-white transition duration-300 hover:bg-orange-600"
             >
               ¡Reservar ahora!
             </button>
           </form>
-        </div>
-
-        <div className="mt-6 rounded-xl bg-white/90 p-4 shadow-lg backdrop-blur">
-          <div className="flex flex-wrap items-center justify-between text-orange-600">
-            {['Fecha', 'Hora', 'Personas', 'Ocasión'].map((label, index) => (
-              <div
-                key={index}
-                className="mb-2 mr-4 flex items-center space-x-2"
-              >
-                <span className="font-semibold">{label}:</span>
-                <span>
-                  {label === 'Fecha'
-                    ? formData.date
-                    : label === 'Hora'
-                      ? formData.time || 'Pendiente'
-                      : label === 'Personas'
-                        ? formData.guests
-                        : formData.occasion.charAt(0).toUpperCase() +
-                          formData.occasion.slice(1)}
-                </span>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>

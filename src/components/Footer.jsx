@@ -2,9 +2,12 @@ import decoration4 from '../img/decoration4.png';
 
 function Footer() {
   return (
-    <div className=" relative bottom-0 left-0 mt-6 flex w-full flex-col justify-center gap-4 overflow-hidden bg-zinc-900">
-      <img src={decoration4} className=" absolute h-full w-full opacity-30 " />
-      <div className="mx-4 mt-4 flex gap-4 font-brush-script">
+    <article className="relative flex w-full flex-col justify-center gap-4 bg-zinc-900 p-4">
+      <img
+        src={decoration4}
+        className=" absolute left-0 h-full w-full opacity-30 "
+      />
+      <div className="flex gap-4 font-brush-script">
         <div className=" ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -18,15 +21,13 @@ function Footer() {
           </svg>
         </div>
         <div>
-          <h1 className="-ml-0.5 text-2xl font-bold text-orange-400">
-            Taqueando
-          </h1>
+          <h1 className="text-2xl font-bold text-orange-400">Taqueando</h1>
           <p className=" text-white"> Restaurante Mexicano</p>
         </div>
       </div>
-      <p className="ml-4 text-sm text-orange-400">Siguenos:</p>
-      <div className="flex h-16 w-full justify-center gap-4 ">
-        <div className="flex h-10 w-10 items-center justify-center  rounded-full bg-white ">
+      <p className="text-sm text-orange-400">Siguenos:</p>
+      <div className="absolute bottom-4 left-0 flex w-full justify-center gap-4 ">
+        <div className="flex h-10 w-10 items-center justify-center  rounded-full bg-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -91,7 +92,7 @@ function Footer() {
           </svg>
         </div>
       </div>
-    </div>
+    </article>
   );
 }
 

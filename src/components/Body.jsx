@@ -10,24 +10,27 @@ import CardTop from './CardTop';
 
 function Body() {
   return (
-    <div className="relative flex w-full flex-col">
-      <section className="relative flex h-screen w-full flex-col items-center justify-center gap-20 bg-orange-400">
-        <img src={decoration2} className="absolute left-0 top-0 w-3/5 " />
-        <img src={decoration1} className=" absolute bottom-4 right-0 w-4/5 " />
+    <div className="relative flex w-full flex-col pt-16">
+      <section className="relative flex h-screen w-full flex-col items-center justify-center gap-16 bg-purple-400">
+        <div className="absolute left-0 top-0 flex h-full w-full">
+          <img src={decoration2} className=" h-full w-1/2" />
+          <img src={decoration1} className="h-full w-1/2" />
+        </div>
         <p
-          className=" text-center font-brush-script text-9xl font-bold uppercase text-white"
+          className=" text-center font-brush-script text-8xl font-bold uppercase text-white"
           style={{ filter: 'drop-shadow(3px 4px 2px RGBA(31, 8, 26, 1))' }}
         >
           Taqueria Taqueando
         </p>
         <img
           src={tacoHome}
-          className=" w-4/6 max-w-[550px]"
+          // className=" w-4/6 max-w-[550px]"
+          className="objebt-cover aspect-square max-w-[400px]"
           style={{ filter: 'drop-shadow(20px 40px 16px RGBa(31, 8, 26, 0.8))' }}
         />
       </section>
 
-      <section className=" relative flex h-screen w-full flex-col items-center justify-center gap-8 bg-gradient-to-t from-zinc-900 via-zinc-900 to-orange-400 to-80% pt-8 ">
+      <section className=" relative flex w-full flex-col items-center justify-center gap-8 bg-gradient-to-t from-zinc-900 via-zinc-900 to-orange-400 to-80% pt-8 ">
         <p
           className="mx-10 mb-8 text-center font-brush-script text-7xl font-bold text-black"
           style={{ filter: 'drop-shadow(2px 2px 2px RGBA(192,38,211, 0.5)' }}
@@ -57,21 +60,21 @@ function Body() {
             descripcion="Ensalada de chinga"
           />
         </div>
-        <img src={decoration1} className="absolute bottom-0 right-0 w-2/3" />
+        {/* <img src={decoration1} className="absolute bottom-0 right-0 w-2/3" /> */}
       </section>
 
       <section className="relative bg-orange-400 ">
         <div className="flex justify-center rounded-b-lg bg-zinc-900 p-20">
-          <img src={fundador} className="w-[70%] rounded-lg" />
+          <img src={fundador} className="w-[60%] rounded-lg" />
         </div>
-        <div className="">
+        <div className="pb-24 pt-10">
           <p className=" mb-4 mt-12 text-center font-brush-script text-7xl font-bold text-black">
             El legado de Pancho!
           </p>
           <p className=" my-5 text-center font-bold">
             Un apasionado emprendedor culinario.{' '}
           </p>
-          <p className="px-4 text-sm text-white">
+          <p className="w full mx-auto max-w-[1000px] px-4 text-sm text-white">
             En el vibrante barrio de La Colonia, nació Pancho en una soleada
             mañana de mayo, envuelto en el aroma de las especias y la música
             callejera. <br />

@@ -13,7 +13,7 @@ function App() {
     <>
       <Navbar />
       {/* <Header /> */}
-      <Routes>
+      <Routes className="h-full w-screen">
         <Route path="/" element={<Body />} />
         <Route path="/reservas" element={<Reservations />} />
         <Route path="/Carta" element={<Menu />} />
