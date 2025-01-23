@@ -1,4 +1,4 @@
-import taco from '../img/taco.jpg';
+import taco from '../img/taco.png';
 import comida1 from '../img/comida1.jpg';
 import comida2 from '../img/comida2.jpg';
 import comida3 from '../img/comida3.jpg';
