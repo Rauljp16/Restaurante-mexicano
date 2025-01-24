@@ -36,7 +36,7 @@ function Reservations() {
   };
 
   return (
-    <section className="relative flex min-h-[calc(100vh-124px)] flex-col justify-center bg-[#FF8C42] px-4 pb-8 pt-24">
+    <section className="relative flex min-h-[calc(100vh-124px)] scale-95 flex-col justify-center bg-[#FF8C42] px-4 pt-6 md:scale-100 lg:pt-20">
       <div className="mx-auto w-full max-w-4xl scale-90">
         <div className="rounded-xl bg-zinc-900/90 p-6 shadow-2xl ">
           <h2 className="mb-6 text-center text-2xl font-bold text-orange-600 md:text-3xl">
@@ -173,6 +173,25 @@ function Reservations() {
               ¡Reservar ahora!
             </button>
           </form>
+          <div className=" mt-6 rounded-xl bg-white/90 p-3 shadow-lg backdrop-blur">
+            <div className=" flex w-fit flex-wrap items-center justify-start text-orange-600">
+              {['Fecha', 'Hora', 'Personas', 'Ocasión'].map((label, index) => (
+                <div key={index} className="flex w-72 items-center space-x-2">
+                  <span className="font-semibold">{label}:</span>
+                  <span>
+                    {label === 'Fecha'
+                      ? formData.date
+                      : label === 'Hora'
+                        ? formData.time || 'Pendiente'
+                        : label === 'Personas'
+                          ? formData.guests
+                          : formData.occasion.charAt(0).toUpperCase() +
+                            formData.occasion.slice(1)}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -72,23 +72,20 @@ function Menu() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-[#FF8C42] px-10 pt-32">
-      {/* Decorative background elements */}
-
-      <div className="relative mx-auto max-w-4xl">
-        <div className="overflow-hidden rounded-2xl bg-slate-100/90 shadow-2xl">
-          <div className="p-6 md:p-8">
-            <h2 className="mb-6 text-3xl font-bold text-orange-600">
+    <section className="relative flex min-h-[calc(100vh-124px)] w-full flex-col justify-center bg-[#FF8C42] pb-6 pt-16 md:px-10 md:pb-10 md:pt-24">
+      <div className="relative mx-auto w-full max-w-4xl p-6">
+        <div className=" rounded-2xl bg-slate-100/90 shadow-2xl">
+          <div className="p-6">
+            <h2 className="mb-6 text-xl font-bold text-orange-600 md:text-3xl">
               Nuestra Carta 🌮🌯🍹
             </h2>
 
-            {/* Categorías */}
-            <div className="mb-6 flex flex-wrap gap-2">
+            <div className="mb-6 flex flex-wrap gap-3">
               {Object.keys(menu).map((categoria) => (
                 <button
                   key={categoria}
                   onClick={() => setCategoriaActiva(categoria)}
-                  className={`rounded-full px-4 py-2 text-sm font-semibold transition duration-300 ${
+                  className={`rounded-full px-4 py-1 text-sm font-semibold transition duration-300 md:py-2 ${
                     categoriaActiva === categoria
                       ? 'bg-orange-500 text-white'
                       : 'bg-orange-100 text-orange-600 hover:bg-orange-200'
@@ -99,12 +96,11 @@ function Menu() {
               ))}
             </div>
 
-            {/* Lista de platillos */}
-            <div className="space-y-6">
+            <div className="scrollbar space-y-4 overflow-y-auto">
               {menu[categoriaActiva].map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-between border-b border-orange-200 pb-4 last:border-b-0"
+                  className="flex items-center justify-between border-b border-orange-200 pb-2 last:border-b-0"
                 >
                   <div>
                     <h3 className="text-lg font-semibold text-orange-600">
@@ -121,9 +117,8 @@ function Menu() {
           </div>
         </div>
 
-        {/* Información adicional */}
-        <div className="mt-6 rounded-xl bg-slate-100/90 p-4 shadow-lg backdrop-blur">
-          <p className="text-center text-orange-600">
+        <div className="mt-6 rounded-xl bg-slate-100/90 p-2 shadow-lg backdrop-blur">
+          <p className="text-center text-lg text-orange-600">
             ⭐ Prueba nuestras tapas estrella!!! ⭐
           </p>
         </div>

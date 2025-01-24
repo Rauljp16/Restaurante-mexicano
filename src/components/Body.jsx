@@ -70,7 +70,7 @@ function Body() {
             <br /> Cada bocado es una experiencia única, una explosión de
             sabores especialmente diseñada para ti
           </p>
-          <div className="scr z-10 flex w-full justify-between gap-6 overflow-x-scroll p-6 py-20">
+          <div className="scrollbar z-10 flex w-full justify-between gap-6 overflow-x-auto px-6 pb-12 pt-20">
             <CardTop
               imagen={taco}
               precio="2.5 €"
@@ -92,16 +92,22 @@ function Body() {
               descripcion="Ensalada de chinga"
             />
           </div>
-          {/* <img src={decoration1} className="absolute bottom-0 right-0 w-2/3" /> */}
+          <img
+            src={decoration1}
+            className="absolute bottom-0 right-0 w-2/3 blur-[1.3px]"
+          />
         </section>
 
-        <section className="relative bg-orange-400 ">
-          <div className="flex justify-center rounded-b-lg bg-zinc-900 p-20">
-            <img src={fundador} className="w-[60%] rounded-lg" />
+        <section className="relative bg-orange-400">
+          <div className="flex justify-center bg-zinc-900 px-6 py-10 md:p-14 lg:p-20 ">
+            <img
+              src={fundador}
+              className=" w-[80%] rounded-lg md:w-[70%] lg:w-[60%]"
+            />
           </div>
           <div className="pb-24 pt-10">
             <p className=" mb-4 mt-12 text-center font-brush-script text-7xl font-bold text-black">
-              El legado de Pancho!
+              El legado de Pancho
             </p>
             <p className=" my-5 text-center font-bold">
               Un apasionado emprendedor culinario.{' '}

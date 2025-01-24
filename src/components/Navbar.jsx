@@ -5,11 +5,11 @@ function Navbar() {
   return (
     <div className="fixed left-0 right-0 top-0 z-20 mx-auto flex h-16 w-full max-w-[1290px] items-center justify-end bg-orange-400/80 p-4 backdrop-blur-sm">
       <div>
-        <Link to="/" className=" hover:text-white">
+        <Link to="/" className=" ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
-            className="relative w-20 text-black"
+            className="relative w-12 text-black transition-all duration-500 ease-in-out hover:text-white md:w-16 "
           >
             <path
               fill="currentColor"

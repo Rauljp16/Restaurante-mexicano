@@ -5,7 +5,7 @@ const BurguerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className=" relative flex h-full w-full items-center justify-end ">
+    <div className=" relative top-[3px] flex h-full w-full items-start justify-end md:top-3 ">
       <div className="hidden justify-end font-brush-script text-3xl font-bold sm:flex">
         <Link to="/" className="mx-4 hover:text-white">
           Inicio

@@ -26,11 +26,11 @@ function Footer() {
         </div>
       </div>
       <p className="text-sm text-orange-400">Siguenos:</p>
-      <div className="absolute bottom-4 left-0 flex w-full justify-center gap-4 ">
-        <div className="flex h-10 w-10 items-center justify-center  rounded-full bg-white">
+      <div className="absolute bottom-4 left-0 flex w-full justify-center gap-5 pl-24 md:gap-7 lg:gap-10">
+        <div className="flex h-6 w-6 items-center justify-center rounded-full bg-white p-[2px] md:h-8 md:w-8">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
+            viewBox="0 0 26 24"
             className=" h-7 w-7  text-orange-400"
           >
             <path
@@ -39,7 +39,7 @@ function Footer() {
             ></path>
           </svg>
         </div>
-        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white">
+        <div className="flex h-6 w-6 items-center justify-center rounded-full bg-white p-[2px] md:h-8 md:w-8">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -52,11 +52,11 @@ function Footer() {
           </svg>
         </div>
 
-        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white">
+        <div className="flex h-6 w-6 items-center justify-center rounded-full bg-white p-[2px] md:h-8 md:w-8">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            className="h-7 w-7 text-orange-400"
+            className="h-5 w-4 text-orange-400"
           >
             <path
               fill="currentColor"
@@ -64,7 +64,7 @@ function Footer() {
             ></path>
           </svg>
         </div>
-        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white">
+        <div className="flex h-6 w-6 items-center justify-center rounded-full bg-white p-[2px] md:h-8 md:w-8">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1024 1024"
@@ -77,11 +77,11 @@ function Footer() {
             ></path>
           </svg>
         </div>
-        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white">
+        <div className="flex h-6 w-6 items-center justify-center rounded-full bg-white p-[2px] md:h-8 md:w-8">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            className=" h-7 w-7 text-orange-400"
+            viewBox="0 2 25 24"
+            className=" h-5 w-4 text-orange-400 md:h-7 md:w-6"
           >
             <path
               fill="currentColor"
