@@ -5,12 +5,14 @@ function Contact() {
   const mapCenter = { lat: 37.97, lng: -1.22 };
   const mapZoom = 12;
   return (
-    <div className="relative flex min-h-[calc(100vh-124px)] scale-95 flex-row-reverse flex-wrap justify-center bg-[#FF8C42] px-4 pt-6 md:scale-100 lg:p-28 lg:pb-12">
-      <section className=" aspect-square h-full w-1/2 object-cover">
-        <Location apiKey={apiKey} center={mapCenter} zoom={mapZoom} />
+    <div className="relative flex min-h-[calc(100vh-124px)] scale-95 flex-row-reverse flex-wrap justify-center bg-[#FF8C42] px-4 pt-6 md:scale-100 lg:p-20 lg:pb-8">
+      <section className="flex aspect-square w-1/2 items-center object-cover">
+        <div className="h-[70%] w-full p-6">
+          <Location apiKey={apiKey} center={mapCenter} zoom={mapZoom} />
+        </div>
       </section>
-      <section className="relative w-1/2">
-        <div className=" flex h-full flex-col justify-between text-2xl text-white ">
+      <section className="relative flex w-1/2 items-center">
+        <div className=" flex h-[70%] flex-col justify-between p-6 text-2xl text-white">
           <h1
             className=" mb-2 text-center font-brush-script text-5xl font-bold uppercase text-white"
             style={{ filter: 'drop-shadow(3px 4px 2px RGBA(31, 8, 26, 1))' }}
