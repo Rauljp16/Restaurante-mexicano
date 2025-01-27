@@ -39,11 +39,11 @@ function Reservations() {
     <section className="relative flex min-h-[calc(100vh-124px)] scale-95 flex-col justify-center bg-[#FF8C42] px-4 pt-6 md:scale-100 lg:pt-20">
       <div className="mx-auto w-full max-w-4xl scale-90">
         <div className="rounded-xl bg-zinc-900/90 p-6 shadow-2xl ">
-          <h2 className="mb-6 text-center text-2xl font-bold text-orange-600 md:text-3xl">
+          <h2 className="mb-4 text-center text-2xl font-bold text-orange-600 md:text-3xl">
             Reserva tu mesa en Taqueria Taqueando 🌮
           </h2>
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid gap-6 md:grid-cols-2">
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="grid gap-4 md:grid-cols-2">
               <div className="space-y-2">
                 <label className="block text-sm font-medium text-white">
                   Fecha
@@ -76,7 +76,7 @@ function Reservations() {
               </div>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-2">
+            <div className="grid gap-4 md:grid-cols-2">
               <div className="space-y-2">
                 <label className="block text-sm font-medium text-white">
                   Número de personas
@@ -117,6 +117,7 @@ function Reservations() {
                   onChange={(e) => updateFormData('occasion', e.target.value)}
                   className="w-full rounded-lg border border-orange-200 p-2 text-sm"
                 >
+                  <option value="">Selecciona la ocasión</option>
                   {occasions.map((occasion) => (
                     <option key={occasion} value={occasion}>
                       {occasion.charAt(0).toUpperCase() + occasion.slice(1)}
@@ -126,7 +127,7 @@ function Reservations() {
               </div>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-2">
+            <div className="grid gap-4 md:grid-cols-2">
               <div className="space-y-2">
                 <label className="block text-sm font-medium text-white">
                   Nombre completo
@@ -168,12 +169,12 @@ function Reservations() {
 
             <button
               type="submit"
-              className="w-full rounded-lg bg-orange-500 px-4 py-2 text-sm font-bold text-white transition duration-300 hover:bg-orange-600"
+              className=" w-full rounded-lg bg-orange-500 px-4 py-2 text-sm font-bold text-white transition duration-300 hover:bg-orange-600"
             >
               ¡Reservar ahora!
             </button>
           </form>
-          <div className=" mt-6 rounded-xl bg-white/90 p-3 shadow-lg backdrop-blur">
+          <div className=" mt-4 rounded-xl bg-white/90 p-3 shadow-lg backdrop-blur">
             <div className=" flex w-fit flex-wrap items-center justify-start text-orange-600">
               {['Fecha', 'Hora', 'Personas', 'Ocasión'].map((label, index) => (
                 <div key={index} className="flex w-72 items-center space-x-2">

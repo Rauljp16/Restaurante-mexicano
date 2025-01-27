@@ -20,11 +20,6 @@ function Menu() {
         descripcion: 'Pollo a la plancha',
         precio: 25,
       },
-      {
-        nombre: 'Taco de Pescado',
-        descripcion: 'Pescado empanizado',
-        precio: 35,
-      },
     ],
     quesadillas: [
       {
@@ -72,9 +67,9 @@ function Menu() {
   };
 
   return (
-    <section className="relative flex min-h-[calc(100vh-124px)] w-full flex-col justify-center bg-[#FF8C42] pb-6 pt-16 md:px-10 md:pb-10 md:pt-24">
-      <div className="relative mx-auto w-full max-w-4xl p-6">
-        <div className=" rounded-2xl bg-slate-100/90 shadow-2xl">
+    <section className="relative flex min-h-[calc(100vh-124px)] w-full flex-col justify-center bg-[#FF8C42] px-6 pb-6 pt-16 md:px-10 md:pb-10 md:pt-24">
+      <div className="relative mx-auto w-full max-w-4xl ">
+        <div className=" h-fit rounded-2xl bg-slate-100/90 shadow-2xl md:h-[443px]">
           <div className="p-6">
             <h2 className="mb-6 text-xl font-bold text-orange-600 md:text-3xl">
               Nuestra Carta 🌮🌯🍹
@@ -117,7 +112,7 @@ function Menu() {
           </div>
         </div>
 
-        <div className="mt-6 rounded-xl bg-slate-100/90 p-2 shadow-lg backdrop-blur">
+        <div className="mt-4 rounded-xl bg-slate-100/90 p-2 shadow-lg backdrop-blur">
           <p className="text-center text-lg text-orange-600">
             ⭐ Prueba nuestras tapas estrella!!! ⭐
           </p>
